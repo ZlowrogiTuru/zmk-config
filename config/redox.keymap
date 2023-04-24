@@ -15,11 +15,11 @@
 
         default_layer {
             // --------------------------------------------------------------------------------------------------------------------------------
-            // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
-            // | TAB   |  Q  |  W  |   E   |  R  |  T  |   (   |           ---        |  )    |  Y    |  U    |  I    |  O   | P  |     -     |
-            // | CTRL  |  A  |  S  |   D   |  F  |  G  |   [   |           ---        |  ]    |  H    |  J    |  K    |  L   | ;  |     '     |
-            // | SHIFT |  Z  |  X  |   C   |  V  |  B  | PG_UP | PG_DOWN | --- | HOME | END   |  N    |  M    |  ,    |  .   | /  | SHFT(RET) |
-            // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
+            // | Term  |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
+            // | Tmux  |  Q  |  W  |   E   |  R  |  T  | Prev  |           ---        | Next  |  Y    |  U    |  I    |  O   | P  |     -     |
+            // | ESC   |  A  |  S  |   D   |  F  |  G  |  Win  |           ---        | Win   |  H    |  J    |  K    |  L   | ;  |     '     |
+            // | SHIFT |  Z  |  X  |   C   |  V  |  B  | PG_UP | PG_DOWN | --- | HOME | END   |  N    |  M    |  ,    |  .   | /  |   SHFT    |
+            // | MO 2  | ALT | GUI | LOWER |    GUI    | SPACE |  CTRL   | --- | TAB  | ENTER |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
 &kp LC(SQT)     &kp N1    &kp N2  &kp N3    &kp N4  &kp N5                                                                       &kp N6    &kp N7     &kp N8   &kp N9     &kp N0      &mo 3
