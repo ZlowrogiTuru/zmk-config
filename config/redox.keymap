@@ -42,14 +42,14 @@
 
         raise_layer {
             // ----------------------------------------------------------------------------------------------------------------------------
-            // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
-            // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
+            // | ESC   |  F1 |  F2 |   F3  |  F4 |  F5 |                   ---                |  F6  |  F7  |  F8  |  F9  |  F10  |  F11  |
+            // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  F12  |
             // | CTRL  |  _  |  +  |   {   |  }  | "|" |   [   |           ---        |  ]    | HOME | PGUP | PRSC | UP   |  `    |   ~   |
             // | SHIFT | ESC | GUI |   (   |  )  |     | PG_UP | PG_DOWN | --- | HOME | END   | END  | PGDN | LEFT | DOWN | RIGHT |  RET  |
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
- &trans       &trans     &trans                &trans                 &trans     &trans                                                    &trans           &trans           &trans           &trans         &trans    &kp F11
+ &trans       &kp F1     &kp F2               &kp F3                &kp F4     &kp F5                                                      &kp F6           &kp F7           &kp F8          &kp F9        &kp F10     &kp F11
 &kp ESC     &kp EXCL     &kp AT              &kp LBRC               &kp RBRC   &kp PIPE         &mo 0                       &trans      &kp UNDER  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp RPAR    &kp F12
  &trans     &kp HASH   &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp LC(HOME)                  &kp LC(END)      &kp EQUAL        &kp PG_UP        &kp PSCRN  &kp KP_NUMBER_6      &kp GRAVE  &kp TILDE
  &trans  &kp PERCENT  &kp CARET      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp TILDE        &trans  &trans  &trans       &trans  &kp AMPERSAND  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH    &kp RET
@@ -60,10 +60,10 @@
         adjust_layer {
             // -----------------------------------------------------------------------------------------
             // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
-            // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
-            // | CTRL  | MUTE  |  Vol Dn  |  Vol Up   | Play/Pause |    | RESET |           ---        |  ]    | F1  | F2  |  F3  |  F4  | F5  | F6         |
-            // | SHIFT | PSCRN |  PSCRN   |   CAPS    |            |    | PG_UP | PG_DOWN | --- | HOME | END   | F7  | F8  |  F9  |  F10 | F11 | F12        |
-            // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
+            // | TRANS |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
+            // | TRANS | MUTE  |  Vol Dn  |  Vol Up   | Play/Pause |    | RESET |           ---        |  ]    | F1  | F2  |  F3  |  F4  | F5  | F6         |
+            // | TRANS | PSCRN |  PSCRN   |   CAPS    |            |    | PG_UP | PG_DOWN | --- | HOME | END   | F7  | F8  |  F9  |  F10 | F11 | F12        |
+            // | TRANS | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
 
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4            &kp F5  &kp F6                                                 &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
