@@ -21,13 +21,19 @@
             compatible = "zmk,behavior-macro";
             label = "ARROWFN";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp EQUAL &kp GT &kp RBKT &kp RBRC>;
+            bindings = <&kp LPAR &kp RPAR &kp EQUAL &kp GT &kp LEFT_BRACE &kp RBRC>;
         };
         ArrowRet: ArrowRet {
             compatible = "zmk,behavior-macro";
             label = "ARROWRET";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT &kp LPAR &kp RBKT &kp RBRC &kp RPAR>;
+            bindings = <&kp EQUAL &kp GT &kp LPAR &kp LEFT_BRACE &kp RBRC &kp RPAR>;
+        };
+        VimWindow1: VimWindow1 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW1";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_1>;
         };
     };
 
@@ -134,11 +140,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
- &trans     &trans     &trans     &trans     &trans     &trans                                           &trans  &trans  &trans  &trans       &trans        &trans
-&kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5   &to 0                  &trans           &kp N6  &kp N7  &kp N8  &kp N9       &kp N0       &kp DEL
- &trans  &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT   &kp BSLH  &trans                  &trans  &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &kp KP_MINUS
- &trans    &kp ESC   &kp LGUI  &kp LG(C)  &kp LG(V)  &kp GRAVE  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp N1  &kp N2  &kp N3      &kp RET       &kp RET
- &trans     &trans     &trans     &trans     &trans             &trans  &trans  &trans  &kp N0                    &mo 0  &trans  &trans       &trans        &trans
+&trans      &kp 0     &trans     &trans     &trans     &trans                                           &trans  &trans  &trans  &trans       &trans        &trans
+&trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5   &to 0                  &trans           &kp N6  &kp N7  &kp N8  &kp N9       &kp N0       &kp DEL
+&trans  &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT   &kp BSLH  &trans                  &trans  &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &kp KP_MINUS
+&trans    &kp ESC   &kp LGUI  &kp LG(C)  &kp LG(V)  &kp GRAVE  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp N1  &kp N2  &kp N3      &kp RET       &kp RET
+&trans     &trans     &trans     &trans     &trans             &trans  &trans  &trans  &kp N0                    &mo 0  &trans  &trans       &trans        &trans
             >;
         };
     };
