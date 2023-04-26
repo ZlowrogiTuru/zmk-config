@@ -10,6 +10,27 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        Arrow: Arrow {
+            compatible = "zmk,behavior-macro";
+            label = "ARROW";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+        };
+        ArrowFn: ArrowFn {
+            compatible = "zmk,behavior-macro";
+            label = "ARROWFN";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp EQUAL &kp GT &kp RBKT &kp RBRC>;
+        };
+        ArrowRet: ArrowRet {
+            compatible = "zmk,behavior-macro";
+            label = "ARROWRET";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT &kp LPAR &kp RBKT &kp RBRC &kp RPAR>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -25,7 +46,7 @@
 &kp LC(SQT)     &kp N1    &kp N2     &kp N3     &kp N4  &kp N5                                                                 &kp N6     &kp N7     &kp N8   &kp N9      &kp N0      &mo 1
   &kp LC(B)      &kp Q     &kp W      &kp E      &kp R   &kp T   &kp LC(PAGE_UP)                            &kp LC(PAGE_DOWN)   &kp Y      &kp U      &kp I    &kp O       &kp P  &kp MINUS
     &kp ESC      &kp A     &kp S      &kp D      &kp F   &kp G      &kp LEFT_GUI                                 &kp LEFT_GUI   &kp H      &kp J      &kp K    &kp L  &lt 4 SEMI    &kp SQT
-  &kp LSHFT      &kp Z     &kp X      &kp C      &kp V   &kp B             &mo 3  &kp ENTER          &mo 5              &mo 3   &kp N      &kp M  &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+  &kp LSHFT      &kp Z     &kp X      &kp C      &kp V   &kp B             &mo 6  &kp ENTER          &mo 5              &mo 6   &kp N      &kp M  &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
       &mo 2  &kp GRAVE  &kp LEFT  &kp RIGHT  &kp SPACE          &kp LEFT_CONTROL    &kp DEL  &kp BACKSPACE            &kp TAB          &kp ENTER   &kp DOWN   &kp UP   &kp RIGHT      &mo 2
             >;
         };
@@ -69,11 +90,11 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans        &trans        &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans    &trans        &trans        &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT      &kp DOWN        &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans    &kp K_PREV  &kp K_NEXT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans            &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans        &trans        &trans      &trans  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans    &trans        &trans        &trans      &trans  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT      &kp DOWN        &kp UP   &kp RIGHT  &trans  &kp K_PLAY_PAUSE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans    &kp K_PREV  &kp K_NEXT  &trans            &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans            &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &trans            &trans
             >;
         };
 
@@ -96,11 +117,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &Arrow  &ArrowFn  &ArrowRet  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans  &trans    &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans            &trans     &trans  &trans  &trans  &trans
             >;
         };
 
