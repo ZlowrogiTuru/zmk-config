@@ -25,14 +25,14 @@
 &kp LC(SQT)     &kp N1    &kp N2     &kp N3     &kp N4  &kp N5                                                                 &kp N6     &kp N7     &kp N8   &kp N9      &kp N0      &mo 1
   &kp LC(B)      &kp Q     &kp W      &kp E      &kp R   &kp T   &kp LC(PAGE_UP)                            &kp LC(PAGE_DOWN)   &kp Y      &kp U      &kp I    &kp O       &kp P  &kp MINUS
     &kp ESC      &kp A     &kp S      &kp D      &kp F   &kp G      &kp LEFT_GUI                                 &kp LEFT_GUI   &kp H      &kp J      &kp K    &kp L  &lt 4 SEMI    &kp SQT
-  &kp LSHFT      &kp Z     &kp X      &kp C      &kp V   &kp B             &mo 3  &kp ENTER  &kp BACKSPACE              &mo 3   &kp N      &kp M  &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+  &kp LSHFT      &kp Z     &kp X      &kp C      &kp V   &kp B             &mo 3  &kp ENTER          &mo 5              &mo 3   &kp N      &kp M  &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
       &mo 2  &kp GRAVE  &kp LEFT  &kp RIGHT  &kp SPACE          &kp LEFT_CONTROL    &kp DEL  &kp BACKSPACE            &kp TAB          &kp ENTER   &kp DOWN   &kp UP   &kp RIGHT      &mo 2
             >;
         };
 
         layers {
             bindings = <
-&trans   &to 0   &to 1   &to 2   &to 3   &to 4                                   &to 5   &to 6   &to 7  &trans  &trans  &trans
+&trans   &to 1   &to 2   &to 3   &to 4   &to 5                                   &to 6   &to 7  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -70,7 +70,7 @@
         layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                    &trans        &trans        &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans        &trans        &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans    &trans        &trans        &trans      &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT      &kp DOWN        &kp UP   &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans    &kp K_PREV  &kp K_NEXT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans            &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &trans  &trans
@@ -86,18 +86,18 @@
             // | TRANS | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4            &kp F5  &kp F6                                                 &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
-&trans       &none         &none         &none             &none   &none  &bootloader                  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG
-&trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE   &none   &sys_reset                      &trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6
-&trans   &kp PSCRN     &kp PSCRN      &kp CLCK             &none   &none       &trans  &trans  &trans      &trans        &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
-&trans      &trans        &trans        &trans            &trans               &trans  &trans  &trans      &trans                      &trans        &trans        &trans        &trans        &trans
+&kp F1      &kp F2        &kp F3        &kp F4            &kp F5  &kp F6                                             &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
+&trans       &none         &none         &none             &none   &none   &to 0                   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG
+&trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE   &none   &none                  &bootloader        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6
+&trans   &kp PSCRN     &kp PSCRN      &kp CLCK             &none   &none  &trans  &trans  &trans   &sys_reset        &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12
+&trans      &trans        &trans        &trans            &trans          &trans  &trans  &trans       &trans                      &trans        &trans        &trans        &trans        &trans
             >;
         };
 
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
@@ -114,7 +114,7 @@
 
             bindings = <
  &trans     &trans     &trans     &trans     &trans     &trans                                           &trans  &trans  &trans  &trans       &trans        &trans
-&kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &trans                  &trans           &kp N6  &kp N7  &kp N8  &kp N9       &kp N0       &kp DEL
+&kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5   &to 0                  &trans           &kp N6  &kp N7  &kp N8  &kp N9       &kp N0       &kp DEL
  &trans  &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT   &kp BSLH  &trans                  &trans  &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &kp KP_MINUS
  &trans    &kp ESC   &kp LGUI  &kp LG(C)  &kp LG(V)  &kp GRAVE  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp N1  &kp N2  &kp N3      &kp RET       &kp RET
  &trans     &trans     &trans     &trans     &trans             &trans  &trans  &trans  &kp N0                    &mo 0  &trans  &trans       &trans        &trans
