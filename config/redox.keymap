@@ -185,7 +185,7 @@
 
         layers {
             bindings = <
-&trans   &to 1   &to 2   &to 3   &to 4   &to 5                                   &to 6   &to 7  &trans  &trans  &trans  &trans
+&trans   &to 1   &to 2   &to 3   &to 4   &to 5                                   &to 6  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans   &to 0                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -254,23 +254,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans            &trans     &trans  &trans  &trans  &trans
-            >;
-        };
-
-        tmux {
-            // --------------------------------------------------------------------------------------------------------------------------
-            // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
-            // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
-            // | CTRL  |  -  |  =  |   [   |   ]   |  \  |   [   |           ---        |  ]  |  *  |  4  |   5  |  6   |  +  |   -   |
-            // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   | RET |  RET  |
-            // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
-
-            bindings = <
-&trans       &TmW1        &TmW2        &TmW3        &TmW4        &TmW5                                               &TmW6         &TmW7        &TmW8        &TmW9        &TmW0         &trans
-&trans       &trans       &TmCW        &kp N3       &kp N4       &kp N5     &to 0                   &trans           &trans        &trans       &trans       &trans       &TmPrevWin    &trans
-&trans       &trans       &kp EQUAL    &kp LBKT     &kp RBKT     &kp BSLH   &trans                  &trans        &TmWinLeft       &TmWinDown   &TmWinUp     &TmWinRight  &trans        &trans
-&trans       &TmResize    &TmCloseW    &TmNewWin    &kp LG(V)    &kp GRAVE  &trans  &trans  &trans  &trans        &TmNextWin       &trans       &trans       &trans       &trans        &trans
-&trans    &TmSplitVert    &TmSplitHor  &trans       &trans                  &trans  &trans  &trans  &trans                         &trans       &trans       &trans       &trans        &trans
             >;
         };
     };
