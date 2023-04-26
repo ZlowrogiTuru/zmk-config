@@ -35,6 +35,60 @@
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp NUMBER_1>;
         };
+        VimWindow2: VimWindow2 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW2";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_2>;
+        };
+        VimWindow3: VimWindow3 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW3";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_3>;
+        };
+        VimWindow4: VimWindow4 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW4";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_4>;
+        };
+        VimWindow5: VimWindow5 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW5";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_5>;
+        };
+        VimWindow6: VimWindow6 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW6";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_6>;
+        };
+        VimWindow7: VimWindow7 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW7";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_7>;
+        };
+        VimWindow8: VimWindow8 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW8";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_8>;
+        };
+        VimWindow9: VimWindow9 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW9";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_9>;
+        };
+        VimWindow0: VimWindow0 {
+            compatible = "zmk,behavior-macro";
+            label = "VIMWINDOW0";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp NUMBER_0>;
+        };
     };
 
     keymap {
