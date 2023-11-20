@@ -17,12 +17,14 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
         };
+
         ArrowFn: ArrowFn {
             compatible = "zmk,behavior-macro";
             label = "ARROWFN";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp EQUAL &kp GT &kp LEFT_BRACE &kp RBRC>;
         };
+
         ArrowRet: ArrowRet {
             compatible = "zmk,behavior-macro";
             label = "ARROWRET";
@@ -70,11 +72,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&trans      &kp F1       &kp F2     &kp F3                &kp F4                 &kp F5                                                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10        &kp F11
-&kp ESC     &kp EXCL     &kp AT     &kp LBRC              &kp RBRC               &kp PIPE   &to 0                             &trans             &kp UNDER      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RPAR       &kp F12
-&trans      &kp HASH     &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp LC(LG(LEFT))                  &kp LC(LG(RIGHT))  &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS       &kp EQUAL
-&caps_word  &kp PERCENT  &kp CARET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &trans            &trans  &trans  &trans             &kp AMPERSAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &caps_word
-&trans      &trans       &trans     &mo 0                 &trans                            &mo 0             &trans  &trans  &trans                            &trans        &kp DOT       &kp NUMBER_0  &trans         &trans
+&trans      &kp F1       &kp F2      &kp F3                &kp F4                 &kp F5                                                          &kp F6         &kp F7        &kp F8        &kp F9        &kp F10        &kp F11
+&kp ESC     &kp EXCL     &kp AT      &kp LBRC              &kp RBRC               &kp PIPE   &to 0                             &trans             &kp UNDER      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RPAR       &kp F12
+&trans      &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp LC(LG(LEFT))                  &kp LC(LG(RIGHT))  &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS       &kp EQUAL
+&caps_word  &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &trans            &trans  &trans  &trans             &kp AMPERSAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &caps_word
+&trans      &trans       &trans      &mo 0                 &trans                            &mo 0             &trans  &trans  &trans                            &trans        &kp DOT       &kp NUMBER_0  &trans         &trans
             >;
         };
 
