@@ -92,11 +92,11 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans    &trans    &trans        &trans        &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0                   &trans  &trans    &trans    &trans        &trans        &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT     &trans      &kp C_PLAY_PAUSE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp C_PREV    &kp C_NEXT    &trans      &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans            &trans    &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &trans
+&trans  &trans    &trans          &trans     &trans  &trans                                  &trans    &trans    &trans        &trans        &trans      &trans
+&trans  &trans    &kp UP_ARROW    &trans     &trans  &trans  &to 0                   &trans  &trans    &trans    &trans        &trans        &trans      &trans
+&trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &trans                  &trans  &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT     &trans      &kp C_PLAY_PAUSE
+&trans  &trans    &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp C_PREV    &kp C_NEXT    &trans      &trans
+&trans  &trans    &trans          &trans     &trans          &trans  &trans  &trans  &trans            &trans    &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &trans
             >;
         };
 
