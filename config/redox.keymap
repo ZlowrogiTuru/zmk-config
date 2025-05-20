@@ -31,6 +31,13 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT &kp LPAR &kp LEFT_BRACE &kp RBRC &kp RPAR>;
         };
+
+        fllFN: fllFN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RBKT &kp RBRC &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp RBKT &kp RET &kp RBRC>;
+            label = "FLLFN";
+        };
     };
 
     keymap {
@@ -119,7 +126,7 @@
 
         macros {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &Arrow  &ArrowFn  &ArrowRet  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &Arrow  &ArrowFn  &ArrowRet  &fllFN  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                   &trans  &trans  &trans    &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans
