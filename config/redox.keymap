@@ -38,6 +38,13 @@
             bindings = <&kp LPAR &kp RBKT &kp RBRC &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp RBKT &kp RET &kp RBRC>;
             label = "FLLFN";
         };
+
+        OmarchyManu: OmarchyManu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp SPACE>;
+            label = "OMARCHYMANU";
+        };
     };
 
     keymap {
@@ -83,7 +90,7 @@
 &kp ESC     &kp EXCL     &kp AT      &kp LBRC              &kp RBRC               &kp PIPE   &to 0                             &trans             &kp UNDER      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RPAR       &kp F12
 &trans      &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp LC(LG(LEFT))                  &kp LC(LG(RIGHT))  &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS       &kp EQUAL
 &caps_word  &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &trans            &trans  &trans  &trans             &kp AMPERSAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &caps_word
-&trans      &trans       &trans      &mo 0                 &trans                            &mo 0             &trans  &trans  &trans                            &trans        &kp DOT       &kp NUMBER_0  &trans         &trans
+&trans      &trans       &trans      &mo 0                 &OmarchyManu                      &mo 0             &trans  &trans  &trans                            &trans        &kp DOT       &kp NUMBER_0  &trans         &trans
             >;
         };
 
