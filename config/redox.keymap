@@ -155,7 +155,7 @@
 &kp LC(B)      &qht LC(GRAVE) Q  &kp W   &kp E      &kp R    &kp T   &trans                                            &trans               &kp Y   &kp U           &kp I      &kp O     &kp P           &kp BSLH
 &kp ESC        &mt LSHFT A      &kp S    &mt LALT D  &kp F    &mt LGUI G  &kp LGUI                                     &kp LGUI             &mt LGUI H  &kp J        &mt LALT K  &kp L     &mt LSHFT SEMI  &lt 4 SQT
 &kp LSHFT      &lt 2 Z          &kp X    &kp C      &kp V    &td_b   &mo 6   &lt 5 ENTER  &mo 5  &mo 6                 &kp N   &kp M        &kp COMMA  &kp DOT   &lt 2 FSLH      &kp RSHFT
-&mo 2          &kp GRAVE        &kp LEFT  &kp RIGHT  &lt 5 DEL        &kp SPACE  &td_ctrl  &mt RALT TAB  &kp ENTER      &kp BSPC  &kp UP    &kp DOWN   &kp RALT  &mo 5
+&mo 2          &kp GRAVE        &kp LEFT  &kp RIGHT &kp SPACE       &td_ctrl  &lt 5 DEL  &kp BSPC  &mt RALT TAB      &kp ENTER  &kp UP    &kp DOWN   &kp RALT  &mo 5
             >;
         };
 
