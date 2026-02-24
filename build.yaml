@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nrfmicro_13
+  - board: nrfmicro/nrf52840/zmk
     shield: redox_left
-  - board: nrfmicro_13
+  - board: nrfmicro/nrf52840/zmk
     shield: redox_right
-  - board: nrfmicro_13
+  - board: nrfmicro/nrf52840/zmk
     shield: settings_reset
