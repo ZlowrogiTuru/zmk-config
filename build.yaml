@@ -15,6 +15,8 @@
 include:
   - board: nrfmicro/nrf52840/zmk
     shield: redox_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nrfmicro/nrf52840/zmk
     shield: redox_right
   - board: nrfmicro/nrf52840/zmk

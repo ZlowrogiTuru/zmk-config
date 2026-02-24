@@ -237,7 +237,7 @@
             // Row 0 right: Arrow/ArrowFn/ArrowRet/fllFN macros, OUT_TOG
             // Row 0 left: BT_CLR + BT_SEL 0-4
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &Arrow  &ArrowFn  &ArrowRet  &fllFN  &trans  &out OUT_TOG
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &Arrow  &ArrowFn  &ArrowRet  &fllFN  &studio_unlock  &out OUT_TOG
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                   &trans  &trans  &trans    &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans
