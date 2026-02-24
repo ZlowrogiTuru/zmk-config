@@ -14,7 +14,7 @@
 &mt {
     tapping-term-ms = <300>;
     hold-trigger-on-release;
-    hold-trigger-key-positions = <27 29 31 34 36 38>;
+    hold-trigger-key-positions = <27 29 31 34 36 38 60 62 61 63 64 65>;
 };
 
 / {
